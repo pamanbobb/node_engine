@@ -19,39 +19,42 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="nav-session-tab" data-toggle="tab" data-target="#nav-session" type="button" role="tab" aria-controls="nav-session" aria-selected="false"><i class="fas fa-cookie-bite"></i> Session</button>
         </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="nav-create-tab" data-toggle="tab" data-target="#nav-create" type="button" role="tab" aria-controls="nav-create" aria-selected="false"><i class="fas fa-user-plus"></i> Create</button>
+        </li>
       </ul>
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
           <div class="card mx-auto" style="width: 35rem;">
             <div class="card-header h3">LOGIN IG</div>
-            <div class="card-body">
-                <div class="input-group mb-3 first">
-                  <span class="input-group-text" id="ed">
-                    <i class="fa-solid fa-user"></i>
-                  </span>
-                  <input type="text" class="form-control pengguna" placeholder="Username" aria-describedby="ed" autocomplete="on">
-                </div>
-                <div class="input-group mb-3 second">
-                  <span class="input-group-text" id="dd">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                  <input type="password" class="form-control sandi" placeholder="Sandi" aria-describedby="dd" autocomplete="on">
-                </div>
-                <div class="input-group mb-3 third">
-                  <span class="input-group-text" id="as">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                  <input type="text" class="form-control code_email" placeholder="Dele kene Codemu" aria-describedby="as">
-                </div>
-                <div class="btn-group mb-3" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-md inbtn mbaros"><i class="fas fa-sign-in-alt"></i> MASUK</button>
-                  <button type="button" class="btn btn-md inbtn resend"></button>
-                </div>
-                <button type="button" class="btn btn-md inbtn backlogin">Kembali Ke Login</button>
-            </div>
-            <div class="card-footer warning_error text-uppercase">
-              CONSOLE
-            </div>
+              <div class="card-body">
+                  <div class="input-group mb-3 first">
+                    <span class="input-group-text" id="ed">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control pengguna" placeholder="Username" aria-describedby="ed" autocomplete="on">
+                  </div>
+                  <div class="input-group mb-3 second">
+                    <span class="input-group-text" id="dd">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" class="form-control sandi" placeholder="Sandi" aria-describedby="dd" autocomplete="on">
+                  </div>
+                  <div class="input-group mb-3 third">
+                    <span class="input-group-text" id="as">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="text" class="form-control code_email" placeholder="Dele kene Codemu" aria-describedby="as">
+                  </div>
+                  <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-md inbtn mbaros"><i class="fas fa-sign-in-alt"></i> MASUK</button>
+                    <button type="button" class="btn btn-md inbtn resend"></button>
+                  </div>
+                  <button type="button" class="btn btn-md inbtn backlogin">Kembali Ke Login</button>
+              </div>
+              <div class="card-footer warning_error text-uppercase">
+                CONSOLE
+              </div>
           </div>
         </div>
         <div class="tab-pane fade" id="nav-session" role="tabpanel" aria-labelledby="nav-session-tab">
@@ -67,6 +70,44 @@
                 <button type="button" class="btn btn-md inbtn load_session">
                   <i class="fas fa-cookie-bite"></i> LOAD
                 </button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-create" role="tabpanel" aria-labelledby="nav-create-tab">
+          <div class="card mx-auto" style="width: 35rem;">
+            <div class="card-header h3">Create Account</div>
+            <div class="card-body">
+                <div class="input-group mb-3 first">
+                    <span class="input-group-text" id="ed">
+                      <i class="fas fa-envelope-open"></i>
+                    </span>
+                    <input type="text" class="form-control email_ig" placeholder="Masukkan Email Atau Nomer" aria-describedby="ed" autocomplete="on">
+                    <div class="input-group-prepend inbtn_remove">
+                      <button type="button" class="btn btn-md inbtn email_generate" title="Generate htconetemp email"><i class="fas fa-at"></i></button>
+                      <button type="button" class="btn btn-md inbtn gmail_plus ml-1" title="Generate gmail plus">Gmail+</button>
+                    </div>
+                </div>
+                <div class="input-group mb-3 passwordthing">
+                    <span class="input-group-text" id="dd">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="text" class="form-control password_ig" placeholder="Sandi" aria-describedby="dd" autocomplete="on">
+                </div>
+                <div class="input-group mb-3 passwordthing">
+                    <span class="input-group-text" id="as">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control first_name" placeholder="Nama Lengkap" aria-describedby="as">
+                </div>
+                <button type="button" class="btn btn-md inbtn create_account">
+                  <i class="fas fa-user-plus"></i> Create
+                </button>
+                <button type="button" class="btn btn-md inbtn generate_credential">
+                  <i class="fas fa-user-plus"></i> Generate
+                </button>
+            </div>
+            <div class="card-footer warning_error text-uppercase">
+                CONSOLE
             </div>
           </div>
         </div>
